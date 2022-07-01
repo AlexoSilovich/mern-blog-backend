@@ -101,7 +101,7 @@ export const getMe = async (req, res) => {
   } catch (err) {
     console.log(err);
     res.status(500).json({
-      message: 'Нет доступа !!!',
+      message: 'Нет доступа',
     });
   }
 };

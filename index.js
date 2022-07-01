@@ -11,7 +11,10 @@ import { UserController, PostController } from './controllers/index.js';
 
 
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect(
+    // process.env.MONGODB_URI
+    'mongodb+srv://admin:Uhomol26112002@cluster0.sdvobrr.mongodb.net/?retryWrites=true&w=majority'
+    )
   .then(() => console.log('DB ok'))
   .catch((err) => console.log('DB error', err));
 
